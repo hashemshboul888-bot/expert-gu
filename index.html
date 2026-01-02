@@ -19,7 +19,6 @@
       animation: gradientBG 15s ease infinite;
     }
 
-    /* Header */
     header {
       padding: 20px 40px;
       display: flex;
@@ -38,7 +37,6 @@
       color: #38bdf8;
     }
 
-    /* Hero */
     .hero {
       text-align: center;
       padding: 120px 20px 80px;
@@ -54,7 +52,6 @@
       opacity: 0.9;
     }
 
-    /* Services */
     .services {
       display: flex;
       justify-content: center;
@@ -77,62 +74,52 @@
       box-shadow: 0 25px 40px rgba(0,0,0,0.4);
     }
 
-    /* Form */
-    .form-section {
-      padding: 70px 20px;
+    /* Contact Box */
+    .contact {
+      padding: 80px 20px;
       display: flex;
       justify-content: center;
     }
 
-    .form-box {
-      width: 100%;
+    .contact-box {
       max-width: 500px;
+      width: 100%;
       background: rgba(255,255,255,0.08);
-      padding: 35px;
-      border-radius: 20px;
+      padding: 40px;
+      border-radius: 22px;
       backdrop-filter: blur(15px);
+      text-align: center;
       box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     }
 
-    .form-box h3 {
-      text-align: center;
-      margin-bottom: 25px;
-      font-size: 24px;
-    }
-
-    .form-box input,
-    .form-box textarea {
-      width: 100%;
-      padding: 14px;
+    .contact-box h3 {
+      font-size: 26px;
       margin-bottom: 15px;
-      border-radius: 12px;
-      border: none;
-      outline: none;
-      font-size: 14px;
     }
 
-    .form-box textarea {
-      resize: none;
-      height: 110px;
-    }
-
-    .form-box button {
-      width: 100%;
-      padding: 14px;
-      background: #38bdf8;
-      border: none;
-      border-radius: 30px;
+    .contact-box p {
       font-size: 16px;
-      cursor: pointer;
+      opacity: 0.85;
+      margin-bottom: 30px;
+    }
+
+    .mail-btn {
+      display: inline-block;
+      padding: 16px 40px;
+      background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+      color: #020617;
+      border-radius: 40px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
       transition: 0.3s;
     }
 
-    .form-box button:hover {
-      background: #0ea5e9;
-      transform: scale(1.05);
+    .mail-btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 15px 30px rgba(56,189,248,0.4);
     }
 
-    /* Footer */
     footer {
       text-align: center;
       padding: 20px;
@@ -146,7 +133,6 @@
       100% { background-position: 0% 50%; }
     }
 
-    /* Responsive */
     @media (max-width: 768px) {
       .services {
         flex-direction: column;
@@ -164,7 +150,7 @@
       <a href="#">الرئيسية</a>
       <a href="#">من نحن</a>
       <a href="#">أعمالنا</a>
-      <a href="#order">اطلب خدمة</a>
+      <a href="#contact">تواصل معنا</a>
     </nav>
   </header>
 
@@ -179,16 +165,21 @@
     <div class="card">هوية بصرية</div>
   </section>
 
-  <section class="form-section" id="order">
-    <div class="form-box">
-      <h3>نموذج طلب خدمة</h3>
-      <form action="mailto:hashemshboul888@gmail.com" method="post" enctype="text/plain">
-        <input type="text" name="name" placeholder="الاسم الكامل" required>
-        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-        <input type="text" name="service" placeholder="نوع الخدمة المطلوبة">
-        <textarea name="details" placeholder="اشرح طلبك بالتفصيل"></textarea>
-        <button type="submit">إرسال الطلب</button>
-      </form>
+  <section class="contact" id="contact">
+    <div class="contact-box">
+      <h3>راسلنا مباشرة</h3>
+      <p>
+        اضغط الزر بالأسفل وسيتم فتح Gmail أو برنامج البريد تلقائياً
+        للتواصل معنا مباشرة
+      </p>
+
+      <!-- رابط مراسلة مباشر -->
+      <a
+        class="mail-btn"
+        href="mailto:hashemshboul888@gmail.com?subject=طلب%20خدمة%20من%20الموقع"
+      >
+        ✉️ مراسلتنا عبر البريد
+      </a>
     </div>
   </section>
 

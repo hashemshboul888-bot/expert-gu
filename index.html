@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>شركة الرؤية الرقمية</title>
+
+  <!-- CSS داخل نفس الملف -->
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Tahoma;
+    }
+
+    body {
+      margin: 0;
+      direction: rtl;
+      color: white;
+      background: linear-gradient(270deg, #111827, #1f2933, #374151);
+      background-size: 600% 600%;
+      animation: gradientBG 15s ease infinite;
+    }
+
+    /* Header */
+    .header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header nav a {
+      color: #e5e7eb;
+      margin-left: 18px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .header nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 130px 20px;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .hero button {
+      margin-top: 25px;
+      padding: 14px 35px;
+      background: #38bdf8;
+      color: #020617;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .hero button:hover {
+      transform: scale(1.1);
+      background: #0ea5e9;
+    }
+
+    /* Services */
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 60px 20px;
+      background: rgba(255,255,255,0.05);
+    }
+
+    .card {
+      width: 220px;
+      padding: 30px;
+      text-align: center;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(12px);
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+
+    .card:hover {
+      transform: translateY(-18px);
+      box-shadow: 0 25px 40px rgba(0,0,0,0.4);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.3);
+      font-size: 14px;
+    }
+
+    /* Background Animation */
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>شركة الرؤية الرقمية (هاشم الشبول)</h1>
+    <nav>
+      <a href="#">الرئيسية</a>
+      <a href="#">من نحن</a>
+      <a href="#">أعمالنا</a>
+      <a href="#">اتصل بنا</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>نحو مستقبل رقمي أقوى</h2>
+    <p>نحوّل أفكارك إلى مواقع وتصاميم احترافية</p>
+    <button>اطلب خدمتك الآن</button>
+  </section>
+
+  <section class="services">
+    <div class="card">تصميم واجهات UI</div>
+    <div class="card">تطوير مواقع ويب</div>
+    <div class="card">هوية بصرية</div>
+  </section>
+
+  <footer>
+    © 2025 شركة الرؤية الرقمية
+  </footer>
+
+</body>
+</html>

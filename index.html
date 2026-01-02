@@ -182,11 +182,11 @@
   <section class="form-section" id="order">
     <div class="form-box">
       <h3>نموذج طلب خدمة</h3>
-      <form>
-        <input type="text" placeholder="الاسم الكامل" required>
-        <input type="email" placeholder="البريد الإلكتروني" required>
-        <input type="text" placeholder="نوع الخدمة المطلوبة">
-        <textarea placeholder="اشرح طلبك بالتفصيل"></textarea>
+      <form action="mailto:hashemshboul888@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="الاسم الكامل" required>
+        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+        <input type="text" name="service" placeholder="نوع الخدمة المطلوبة">
+        <textarea name="details" placeholder="اشرح طلبك بالتفصيل"></textarea>
         <button type="submit">إرسال الطلب</button>
       </form>
     </div>
